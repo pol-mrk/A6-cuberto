@@ -1,0 +1,177 @@
+html {
+    font-size: 16px;
+}
+
+
+/* Redimensión de fuente utilizando rem */
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 4.7rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1.05rem;
+}
+
+
+/**************************/
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.row {
+    padding: 2%;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.bordes {
+    padding: 3%;
+}
+
+.azul {
+    color: darkcyan;
+}
+
+.gris {
+    color: gray
+}
+
+.blanco {
+    color: white;
+}
+
+.fondo1 {
+    background-color: #F5EEF5;
+}
+
+.fondo2 {
+    background-color: #FAF5A3;
+}
+
+.fondo3 {
+    background-color: #F2F9F8;
+}
+
+.fondo4 {
+    background-color: #000000;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+}
+
+
+/* Otras clases */
+
+
+/* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* column-2 pasará de tener 50% a 100% */
+    .column-2 {
+        width: 100%;
+    }
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+    img {
+        display: block;
+        margin: 0px auto;
+        width: 90%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    b {
+        margin-left: 5%;
+    }
+}
